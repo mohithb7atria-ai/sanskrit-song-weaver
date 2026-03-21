@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Lora', 'serif'],
+        display: ["Playfair Display", "serif"],
+        body: ["Lora", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -69,16 +69,28 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
         "pulse-gold": {
-          "0%, 100%": { boxShadow: "0 0 0 0 hsl(42 70% 55% / 0)" },
-          "50%": { boxShadow: "0 0 20px 4px hsl(42 70% 55% / 0.3)" },
+          "0%, 100%": {
+            boxShadow: "0 0 0 0 hsl(42 70% 55% / 0)",
+          },
+          "50%": {
+            boxShadow: "0 0 20px 4px hsl(42 70% 55% / 0.3)",
+          },
         },
       },
       animation: {
@@ -87,3 +99,6 @@ export default {
         "pulse-gold": "pulse-gold 2s ease-in-out infinite",
       },
     },
+  },
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config;
