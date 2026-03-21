@@ -36,11 +36,6 @@
 
     --radius: 0.75rem;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Lora', serif;
-
-    --gold-glow: 0 0 20px hsl(42 70% 55% / 0.3);
-
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
